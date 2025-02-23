@@ -2,9 +2,8 @@ import useSpline from '@splinetool/r3f-spline'
 import { OrbitControls } from '@react-three/drei'
 import { useFrame } from '@react-three/fiber'
 import { useRef } from 'react'
-import * as THREE from 'three' // Add THREE import
+import * as THREE from 'three'
 import { PerspectiveCamera, OrthographicCamera } from '@react-three/drei'
-import './Scene.css'
 
 export default function Scene({ ...props }) {
   const { nodes, materials } = useSpline('https://prod.spline.design/W12dfzkpb9P-uOdm/scene.splinecode')
